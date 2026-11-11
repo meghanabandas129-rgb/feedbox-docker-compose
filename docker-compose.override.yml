@@ -1,0 +1,6 @@
+services:
+  api:
+    command: ["./node_modules/.bin/nodemon", "--legacy-watch", "--watch", "server.js", "server.js"]
+    volumes:
+      - .:/app
+      - /app/node_modules
